@@ -1,0 +1,167 @@
+body {
+
+	line-height: 1.6;
+	color: white;
+	background-color: orange;
+	font-family: sans-serif;
+}
+
+a {
+	color: orange;
+	font-family: fantasy;
+	text-decoration:none;
+}
+
+P{ font-family: sans-serif;
+margin: 5%;
+}
+
+h2{
+	margin: 5%;
+	font-family: italic;
+}
+
+h3{margin: 5%;
+	font-family: italic;
+
+}
+
+article{
+	margin: 5%;
+	font-family: sans-serif;
+
+}
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	margin: 0;
+	text-align: left;
+	font-family:fantasy;
+	font-style:italic;
+	font-size: 25px;
+
+}
+
+/* ---- Layout Containers ---- */
+
+.wrapper {
+	width: 100%;
+	margin:5%. 0;
+}
+
+.main-header {
+	background:black;
+	padding: 50px;
+	margin: 0px;
+	text-align: center;
+}
+
+.main-footer {
+	padding: 70px;
+	background:black;
+	text-decoration-color: white;
+
+
+
+}
+
+/* ---- Page Elements ---- */
+ .main-nav li{
+	 display:inline;
+	 width:auto;
+	 padding:10px;
+
+
+
+}
+
+.main-nav  {
+display: inline-flex;
+ padding:10px;
+ margin:0px;
+text-align:left;
+position: absolute;
+
+}
+ img {max-width: 1000px;
+	    max-height:1000px;
+			width: 1200px;
+			height: 400px;
+			margin: 115px;
+ }
+/* =================================================
+ Media Queries
+==================================================== */
+
+/
+
+
+@media (max-width: 575px) {
+  header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .name {
+    margin-bottom: 0;
+  }
+  nav a {
+    padding: 6px 0;
+    background: #def1f9;
+    margin: .2em 0;
+  }
+  img {
+    display: none;
+  }
+}
+
+/* Target viewport sizes 576px and wider */
+
+@media (min-width: 576px) {
+  .name {
+    float: left;
+  }
+  nav {
+    margin-top: 24px;
+  }
+  nav li {
+    display: inline-block;
+    margin: 0 0.45em;
+  }
+  h2 {
+    margin-bottom: 1.5em;
+  }
+}
+
+/* Target a viewport range wider than 575px and narrower than 992px */
+
+@media (min-width: 576px) and (max-width: 991px) {
+  nav {
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+/* Target viewport sizes 768px and wider */
+
+@media (min-width: 768px) {
+  .article {
+    float: left;
+    width: 65%;
+  }
+  aside {
+    float: right;
+    width: 30%;
+  }
+}
+
+/* Target viewport sizes 992px and wider */
+
+@media (min-width: 992px) {
+  nav {
+    float: right;
+  }
+}
